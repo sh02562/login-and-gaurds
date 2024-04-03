@@ -11,12 +11,12 @@ export class CoreComponent {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.navigate([`core/signup`]);
+    this.router.navigate([`/signup`]);
   }
 
   
 
   toggle(page:string){
-this.router.navigate([`core/${page}`]);
+this.router.navigate([`/${page}`]);
   }
 }
