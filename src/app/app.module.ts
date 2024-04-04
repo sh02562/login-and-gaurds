@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { CoreModule } from './core/core.module';
 import { } from '@angular/compiler';
+import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 // import { LoginComponent } from './core/login/login.component';
 // import { SignupComponent } from './core/signup/signup.component';
 
@@ -17,6 +19,7 @@ import { } from '@angular/compiler';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     // CoreModule
   ],
   providers: [],
