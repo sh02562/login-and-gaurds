@@ -9,12 +9,14 @@ import { AuthService } from 'src/app/services/auth.service';
 export class LoginComponent {
  email!:string;
  password!:string;
+ isLoading = false;
  constructor(private _authService:AuthService){}
 
 ngOnInit(){
 
 }
 login(){
+  this.isLoading = true;
 console.log("passwor",this.password);
 let data={
   email:this.email,
@@ -22,6 +24,7 @@ let data={
 }
 this._authService.loginUser(data).subscribe((res)=>{
 console.log('test',res);
+this.isLoading = false;
 
 })
 }

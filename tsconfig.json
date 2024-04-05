@@ -25,6 +25,7 @@
     ],
     "paths":{
       "@CommonCustomModule":["src/app/shared/sharedlocation"],
+      "@CommonCustomModule/*":["src/app/shared/sharedlocation/*"], // this line helps to call all the folders inside sharedlocation ex: you can also call like import { CommonCustomModule } from '@CommonCustomModule/index' in your component 
     }
   },
   "angularCompilerOptions": {
