@@ -11,7 +11,6 @@ export class CoreComponent {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.navigate([`/signup`]);
   }
 
   

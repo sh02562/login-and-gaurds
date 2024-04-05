@@ -7,12 +7,11 @@ const routes: Routes = [
   {
   path: '', component: CoreComponent,
     children: [
-      // { path: '', loadChildren:() => import('src/app/core/signup/signup.module').then(module => module.SignupModule) , outlet: 'signup' },
-
-      //   { path: 'login', loadChildren:() => import('src/app/core/login/login.module').then(module => module.LoginModule) , outlet: 'login' },
+      
         { path: 'signup', loadChildren:() => import('../core/signup/signup.module').then(module => module.SignupModule)  },
-
         { path: 'login', loadChildren:() => import('../core/login/login.module').then(module => module.LoginModule)  },
+        { path: '', redirectTo: '/signup', pathMatch: 'full' },
+
     ]
   }
 ];

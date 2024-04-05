@@ -20,7 +20,7 @@ let data={
   email:this.email,
   password:this.password
 }
-this._authService.getUser(data).subscribe((res)=>{
+this._authService.loginUser(data).subscribe((res)=>{
 console.log('test',res);
 
 })
